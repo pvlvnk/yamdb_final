@@ -44,4 +44,4 @@ docker-compose exec web python manage.py migrate
 - [PATCH] /api/v1/titles/{title_id}/reviews/{review_id}/ - Частично обновить отзыв по id.
 - [DELETE] /api/v1/titles/{title_id}/reviews/{review_id}/ - Удалить отзыв по id.
 
-
+![example workflow](https://github.com/pvlvnk/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
