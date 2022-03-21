@@ -1,4 +1,3 @@
-
 from django.conf import settings
 from django.core.mail import send_mail
 from django.db.models.aggregates import Avg
@@ -10,11 +9,11 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
-
 from reviews.models import Category, Genre, Review, Title, User
+
 from .filters import TitleFilter
 from .mixins import CustomViewSet
-from .permissions import IsAdmin, ReviewCommentPermissions, AdminOrReadOnly
+from .permissions import AdminOrReadOnly, IsAdmin, ReviewCommentPermissions
 from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, GetAllUserSerializer,
                           GetTokenSerializer, RegistrationSerializer,
@@ -177,8 +176,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         title_id = self.kwargs.get('title_id')
         title = get_object_or_404(Title, id=title_id)
-        new_queryset = title.reviews.all()
-        return new_queryset
+        return title.reviews.all()
 
 
 class CommentViewSet(viewsets.ModelViewSet):
@@ -192,5 +190,4 @@ class CommentViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         review_id = self.kwargs.get('review_id')
         review = get_object_or_404(Review, id=review_id)
-        new_queryset = review.comments.all()
-        return new_queryset
+        return review.comments.all()
