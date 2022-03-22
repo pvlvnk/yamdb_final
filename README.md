@@ -1,5 +1,4 @@
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg) 
-![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=feature-1)
+[![Django-app workflow](https://github.com/pvlvnk/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/pvlvnk/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
 # Проект YaMDb
 ## Описание
