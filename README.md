@@ -1,3 +1,5 @@
+![example workflow](https://github.com/pvlvnk/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
+
 # Проект YaMDb
 ## Описание
 
@@ -43,6 +45,3 @@ docker-compose exec web python manage.py migrate
 - [GET] /api/v1/titles/{title_id}/reviews/{review_id}/ - Получить отзыв по id для указанного произведения.
 - [PATCH] /api/v1/titles/{title_id}/reviews/{review_id}/ - Частично обновить отзыв по id.
 - [DELETE] /api/v1/titles/{title_id}/reviews/{review_id}/ - Удалить отзыв по id.
-
-![example workflow](https://github.com/pvlvnk/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
-
