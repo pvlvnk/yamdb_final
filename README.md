@@ -1,4 +1,4 @@
-![example workflow](https://github.com/pvlvnk/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
 # Проект YaMDb
 ## Описание
