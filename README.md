@@ -39,9 +39,18 @@ docker-compose exec web python manage.py migrate
 ## Примеры
 
 Примеры запросов по API:
-
+```
 - [GET] /api/v1//titles/{title_id}/reviews/ - Получить список всех отзывов.
+```
+```
 - [POST]  /api/v1//titles/{title_id}/reviews/ - Добавить новый отзыв. Пользователь может оставить только один отзыв на произведение.
+```
+```
 - [GET] /api/v1/titles/{title_id}/reviews/{review_id}/ - Получить отзыв по id для указанного произведения.
+```
+```
 - [PATCH] /api/v1/titles/{title_id}/reviews/{review_id}/ - Частично обновить отзыв по id.
+```
+```
 - [DELETE] /api/v1/titles/{title_id}/reviews/{review_id}/ - Удалить отзыв по id.
+```
